@@ -1,0 +1,21 @@
+{
+  "snippets": [
+    {
+      "type": "doc",
+      "id": "snippets/index"
+    },
+    {
+      "type": "category",
+      "label": "Hello world Example",
+      "items": [
+        "snippets/helloworld/helloworld-py",
+        "snippets/helloworld/helloworld-c",
+        "snippets/helloworld/helloworld-cpp"
+      ]
+    },
+    {
+      "type": "doc",
+      "id": "snippets/readparams/read-parameters-py"
+    }
+  ]
+}

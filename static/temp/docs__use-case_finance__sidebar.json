@@ -1,0 +1,41 @@
+{
+  "finance": [
+    {
+      "type": "doc",
+      "id": "use-case/finance/getting-started"
+    },
+    {
+      "type": "category",
+      "label": "Pre Requisites",
+      "items": [
+        "use-case/finance/create-amorphic",
+        "use-case/finance/markdown-features"
+      ]
+    },
+    {
+      "type": "category",
+      "label": "Ingestion",
+      "items": [
+        "use-case/finance/ingestion"
+      ]
+    },
+    {
+      "type": "category",
+      "label": "ETL",
+      "items": [
+        "use-case/finance/etl"
+      ]
+    },
+    {
+      "type": "category",
+      "label": "Schedules",
+      "items": [
+        "use-case/finance/schedule"
+      ]
+    },
+    {
+      "type": "doc",
+      "id": "use-case/finance/finish"
+    }
+  ]
+}
