@@ -3,7 +3,7 @@
 
 # Production
 /build
-/temp
+/temp/*.json
 *sidebars.js
 combined_sidebars.json
 
