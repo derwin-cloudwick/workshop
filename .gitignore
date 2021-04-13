@@ -4,7 +4,7 @@
 # Production
 /build
 /temp
-sidebars.js
+*sidebars.js
 combined_sidebars.json
 
 # Generated files
