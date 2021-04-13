@@ -12,3 +12,7 @@ jq -rs 'reduce .[] as $item ({}; . * $item)' ./static/temp/*.json > ./static/com
 cat > ./sidebars.js <<EOF
 module.exports = $(<./static/combined_sidebars.json)
 EOF
+
+rm -rf ./static/temp/*
+rm ./static/combined_sidebars.json
+echo "workshop.amorphicdata.io" >> ./static/CNAME
