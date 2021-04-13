@@ -3,6 +3,8 @@
 
 # Production
 /build
+/temp
+sidebars.js
 
 # Generated files
 .docusaurus

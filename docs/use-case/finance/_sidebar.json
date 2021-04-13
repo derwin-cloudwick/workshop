@@ -1,0 +1,41 @@
+{
+    "finance": [
+        {
+          "type": "doc",
+          "id": "getting-started"
+        },
+        {
+          "type": "category",
+          "label": "Pre Requisites",
+          "items": [
+            "create-amorphic",
+            "markdown-features"
+          ]
+        },
+        {
+          "type": "category",
+          "label": "Ingestion",
+          "items": [
+            "ingestion"
+          ]
+        },
+        {
+          "type": "category",
+          "label": "ETL",
+          "items": [
+            "etl"
+          ]
+        },
+        {
+          "type": "category",
+          "label": "Schedules",
+          "items": [
+            "schedule"
+          ]
+        },
+        {
+          "type": "doc",
+          "id": "finish"
+        }
+      ]
+}

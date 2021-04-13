@@ -1,0 +1,28 @@
+{
+  "how-to": [
+      {
+        "type": "doc",
+        "id": "index"
+      },
+      {
+        "type": "doc",
+        "id": "create-pat"
+      },
+      {
+        "type": "doc",
+        "id": "provide-access"
+      },
+      {
+        "type": "doc",
+        "id": "get-resourceid"
+      },
+      {
+        "type": "doc",
+        "id": "enable-malware"
+      },
+      {
+        "type": "doc",
+        "id": "dashboard-sharing"
+      }
+  ]
+}
