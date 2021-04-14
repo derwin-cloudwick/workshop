@@ -1,0 +1,37 @@
+---
+title: Tabs
+description: description
+hide_title: true
+---
+To show tabbed content within Markdown files, you can fall back on MDX. &lt;Tabs&gt; component is provided out-of-the-box.
+
+    import Tabs from '@theme/Tabs';
+    import TabItem from '@theme/TabItem';
+
+    <Tabs
+    defaultValue="mac"
+    values={[
+        {label: 'Windows', value: 'win'},
+        {label: 'Linux', value: 'linux'},
+        {label: 'MacOS', value: 'mac'},
+    ]}>
+    <TabItem value="win">Use Ctrl + C to copy</TabItem>
+    <TabItem value="linux">Use Ctrl + C to copy</TabItem>
+    <TabItem value="mac">Use Command + C to copy</TabItem>
+    </Tabs>
+
+
+import Tabs from '@theme/Tabs';
+import TabItem from '@theme/TabItem';
+
+<Tabs
+    defaultValue="mac"
+    values={[
+        {label: 'Windows', value: 'win'},
+        {label: 'Linux', value: 'linux'},
+        {label: 'MacOS', value: 'mac'},
+    ]}>
+    <TabItem value="win">Use Ctrl + C to copy</TabItem>
+    <TabItem value="linux">Use Ctrl + C to copy</TabItem>
+    <TabItem value="mac">Use Command + C to copy</TabItem>
+</Tabs>

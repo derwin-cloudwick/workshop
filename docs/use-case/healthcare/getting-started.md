@@ -1,5 +1,6 @@
 ---
 title: Getting Started
+sidebar_label: Healthcare
 hide_title: true
 slug: /use-case/healthcare
 ---

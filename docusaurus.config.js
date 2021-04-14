@@ -84,6 +84,19 @@ module.exports = {
             },
           ],
         },
+        {
+          title: 'Content Developer',
+          items: [
+            {
+              label: 'Github',
+              to: 'https://github.com/AmorphicData/workshop',
+            },
+            {
+              label: 'Creating Docs',
+              to: 'docs/how-to/content-developer/',
+            },
+          ],
+        },
       ],
       logo: {
         alt: 'Amorphic Logo',

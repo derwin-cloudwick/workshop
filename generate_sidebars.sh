@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 
-rm -rf ./static/temp/*
+rm -rf ./static/temp/*.json
 find docs/ -name "_sidebar.json" | while IFS= read -r NAME; do
     actualPath="${NAME/\/\///}"
     fullPath="${actualPath/docs\//}"
@@ -13,6 +13,6 @@ cat > ./sidebars.js <<EOF
 module.exports = $(<./static/combined_sidebars.json)
 EOF
 
-rm -rf ./static/temp/*
+rm -rf ./static/temp/*.json
 rm ./static/combined_sidebars.json
 echo "workshop.amorphicdata.io" >> ./static/CNAME

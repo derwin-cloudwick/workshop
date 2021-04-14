@@ -1,0 +1,125 @@
+---
+title: Code Blocks
+description: description
+hide_title: true
+---
+
+Markdown code blocks are supported with Syntax highlighting.
+
+## Code title
+You can add a title to the code block by adding `title` key after the language (leave a space between them).
+
+You write:
+    ```python title="src/components/helloWorld.py"
+      # This program prints Hello, world!
+      my_string = "Hello, World!"
+      print(my_string)
+    ```
+
+you get:
+```python title="src/components/helloWorld.py"
+# This program prints Hello, world!
+my_string = "Hello, World!"
+print(my_string)
+```
+
+## Syntax highlighting
+Code blocks are text blocks wrapped around by strings of 3 backticks. You may check out this [reference](https://github.com/mdx-js/specification) for specifications of MDX.
+
+    ```jsx
+    console.log('Every repo must come with a mascot.');
+    ```
+```jsx
+console.log('Every repo must come with a mascot.');
+```
+
+## Multi-language code blocks
+With MDX, you can easily create interactive components within your documentation, for example, to display code in multiple programming languages and switching between them using a tabs component.
+
+Instead of implementing a dedicated component for multi-language support code blocks, we've implemented a generic Tabs component in the classic theme so that you can use it for other non-code scenarios as well.
+
+The following example is how you can have multi-language code tabs in your docs. Note that the empty lines above and below each language block is intentional. This is a current limitation of MDX, you have to leave empty lines around Markdown syntax for the MDX parser to know that it's Markdown syntax and not JSX.
+
+    ```code
+    import Tabs from '@theme/Tabs';
+    import TabItem from '@theme/TabItem';
+
+    <Tabs
+    defaultValue="js"
+    values={[
+        { label: 'JavaScript', value: 'js', },
+        { label: 'Python', value: 'py', },
+        { label: 'Java', value: 'java', },
+    ]
+    }>
+    <TabItem value="js">
+
+    ```js
+    function helloWorld() {
+    console.log('Hello, world!');
+    }
+    ```
+
+    </TabItem>
+    <TabItem value="py">
+
+    ```py
+    def hello_world():
+    print 'Hello, world!'
+    ```
+
+    </TabItem>
+    <TabItem value="java">
+
+    ```java
+    class HelloWorld {
+    public static void main(String args[]) {
+        System.out.println("Hello, World");
+    }
+    }
+    ```
+
+    </TabItem>
+    </Tabs>
+    ```
+
+import Tabs from '@theme/Tabs';
+import TabItem from '@theme/TabItem';
+
+<Tabs
+  defaultValue="js"
+  values={[
+    { label: 'JavaScript', value: 'js', },
+    { label: 'Python', value: 'py', },
+    { label: 'Java', value: 'java', },
+  ]
+}>
+<TabItem value="js">
+
+```js
+function helloWorld() {
+  console.log('Hello, world!');
+}
+```
+
+</TabItem>
+<TabItem value="py">
+
+```py
+def hello_world():
+  print 'Hello, world!'
+```
+
+</TabItem>
+<TabItem value="java">
+
+```java
+class HelloWorld {
+  public static void main(String args[]) {
+    System.out.println("Hello, World");
+  }
+}
+```
+
+</TabItem>
+</Tabs>

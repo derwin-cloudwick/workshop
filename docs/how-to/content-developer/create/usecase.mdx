@@ -1,0 +1,52 @@
+---
+title: Use case Documentation
+description: description
+hide_title: true
+---
+
+## Create a new directory
+
+To create a new `Use case` Documentation, create a new directory under the `docs -> use-case` directory as shown below
+
+    workshop # Root directory of your repo
+    └── docs
+       ├── use-case
+            ├── new-use-case-name
+
+## Create content
+
+You can now update the directory with relevant content.
+create multiple files under this directory [Refer this link](../mdx/intro) for mdx intro
+
+:::note -
+[Refer this link](./sidebar#files) for file naming instructions.
+:::
+
+## Create _sidebar.json
+
+You must create a new **_sidebar.json** file under this new directory and update the contents of the file accordingly.
+
+Its preferred to use relative paths
+
+example of the **_sidebar.json** file would look like
+
+    {
+        "new-use-case-name": [
+            { "type": "doc", "id": "intro" },
+            {
+                "type": "category",
+                "label": "pre-reqs",
+                "items": [
+                    "document-x",
+                    "document-y",
+                    "document-z"
+                ]
+            },
+            { "type": "doc", "id": "document3" },
+            { "type": "doc", "id": "document4" }
+        ]
+    }
+
+:::note -
+[Refer this link](./sidebar#sidebar) for sidebar documentation.
+:::

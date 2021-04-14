@@ -1,0 +1,126 @@
+---
+title: Files & Sidebar
+description: description
+hide_title: true
+---
+
+## Files
+
+Please follow the instructions when creating files
+- Create files with `mdx` extension
+- Do not use spaces or special characters in the file names
+- Usage of `hyphen(-)` is allowed in the file names
+- Every file must contain the [front matter](../mdx/frontmatter) section with mandatory `title` and `description` fields
+
+## Sidebar
+
+sidebars are the left side menu section on each page. Though most of the sections have pre-defined sidebars like
+`how-to` `snippets` `Use cases` pages, you may have to create **_sidebar.json** files inside sub-directories when creating
+use-case documentation when necessary.
+
+Here are a few points to keep in mind when creating **_sidebar.json** files
+- Allowed `type` values are `['doc', 'category']`
+- The value of the `id` us usually the file name.
+- Please use the relative paths for the `id` values
+- If `label` is not specified, the `title` value of the file&apos;s frontmatter section is used as the display text in the menu
+- If type is mentioned as `category` you must provide the `label` and `items` values
+- `items` must be an array
+- You can use `string(ids)` values or `objects({})` or a combination of both in `items` section
+
+<br/><br/>
+
+:::danger Attention
+**Update the `_sidebar.json` file carefully to add the links in the order of your preference. Tampering with this file will render the UI unusable.
+Hence please pay atmost attention when editing this file.**
+:::
+
+
+Examples of the **_sidebar.json** file and the corresponding sidebar menu it generates are as follows
+
+### example-1
+    {
+        "how-to": [
+            { "type": "doc", "id": "document1" }, ## use document name without mdx extension as id
+            { "type": "doc", "id": "document2" },
+            { "type": "doc", "id": "document3" },
+            { "type": "doc", "id": "document4" },
+            { "type": "doc", "id": "document5" }
+        ]
+    }
+
+The above _sidebar.json config will generate the following sidebar menu structure
+
+    └── document1
+    └── document2
+    └── document3
+    └── document4
+    └── document5
+
+<br/><br/>
+
+### example-2
+    {
+        "how-to": [
+            { "type": "doc", "id": "document1" }, ## use document name without mdx extension as id
+            {
+                "type": "category",
+                "label": "submenu level-1",
+                "items": [
+                    "document-x",
+                    "document-y",
+                    "document-z"
+                ]
+            },
+            { "type": "doc", "id": "document3" },
+            { "type": "doc", "id": "document4" }
+        ]
+    }
+
+The above _sidebar.json config will generate the following sidebar menu structure
+
+    └── document1
+    └── submenu level-1
+       ├── document-x
+       ├── document-y
+       ├── document-z
+    └── document3
+    └── document4
+
+<br/><br/>
+
+### example-3
+    {
+        "how-to": [
+            { "type": "doc", "id": "document1" }, ## use document name without mdx extension as id
+            {
+                "type": "category",
+                "label": "submenu level-1",
+                "items": [
+                    "document-x",
+                    {
+                        "type": "category",
+                        "label": "submenu level-2",
+                        "items": [
+                            "document-abcd",
+                            "document-pqrs"
+                        ]
+                    }
+                    "document-z"
+                ]
+            },
+            { "type": "doc", "id": "document3" },
+            { "type": "doc", "id": "document4" }
+        ]
+    }
+
+The above _sidebar.json config will generate the following sidebar menu structure
+
+    └── document1
+    └── submenu level-1
+       ├── document-x
+       ├── submenu level-2
+            ├── document-abcd
+            ├── document-pqrs
+       ├── document-z
+    └── document3
+    └── document4

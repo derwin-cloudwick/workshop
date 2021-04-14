@@ -1,0 +1,33 @@
+{
+    "developer-docs": [
+        {
+            "type": "doc",
+            "id": "index"
+        },
+        {
+            "type": "category",
+            "label": "MDX",
+            "items": [
+                "mdx/intro",
+                "mdx/frontmatter",
+                "mdx/headings",
+                "mdx/links",
+                "mdx/images",
+                "mdx/tabs",
+                "mdx/admonitions",
+                "mdx/codeblocks"
+            ]
+        },
+        {
+            "type": "category",
+            "label": "Creating Content",
+            "items": [
+                "create/intro",
+                "create/sidebar",
+                "create/code-snippets",
+                "create/howto-article",
+                "create/usecase"
+            ]
+        }
+    ]
+}

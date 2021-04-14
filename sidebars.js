@@ -9,20 +9,6 @@ module.exports = {
       "id": "use-cases"
     },
     {
-      "type": "category",
-      "label": "Create Resources",
-      "items": [
-        "markdown-features",
-        {
-          "type": "category",
-          "label": "Nested Menu",
-          "items": [
-            "markdown-features"
-          ]
-        }
-      ]
-    },
-    {
       "type": "doc",
       "id": "thank-you"
     }
@@ -51,6 +37,37 @@ module.exports = {
     {
       "type": "doc",
       "id": "how-to/dashboard-sharing"
+    }
+  ],
+  "developer-docs": [
+    {
+      "type": "doc",
+      "id": "how-to/content-developer/index"
+    },
+    {
+      "type": "category",
+      "label": "MDX",
+      "items": [
+        "how-to/content-developer/mdx/intro",
+        "how-to/content-developer/mdx/frontmatter",
+        "how-to/content-developer/mdx/headings",
+        "how-to/content-developer/mdx/links",
+        "how-to/content-developer/mdx/images",
+        "how-to/content-developer/mdx/tabs",
+        "how-to/content-developer/mdx/admonitions",
+        "how-to/content-developer/mdx/codeblocks"
+      ]
+    },
+    {
+      "type": "category",
+      "label": "Creating Content",
+      "items": [
+        "how-to/content-developer/create/intro",
+        "how-to/content-developer/create/sidebar",
+        "how-to/content-developer/create/code-snippets",
+        "how-to/content-developer/create/howto-article",
+        "how-to/content-developer/create/usecase"
+      ]
     }
   ],
   "snippets": [

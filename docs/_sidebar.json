@@ -9,20 +9,6 @@
         "id": "use-cases"
       },
       {
-        "type": "category",
-        "label": "Create Resources",
-        "items": [
-          "markdown-features",
-          {
-            "type": "category",
-            "label": "Nested Menu",
-            "items": [
-              "markdown-features"
-            ]
-          }
-        ]
-      },
-      {
         "type": "doc",
         "id": "thank-you"
       }

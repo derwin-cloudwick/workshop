@@ -3,9 +3,9 @@ title: Thank you!
 ---
 
 ![Congratulations](/img/core/undraw_winners.svg)
-Congratulations on making it this far!
+Thank you for your intrest in Amorphic Data Platform(ADP)
 
-You have learned the **basics of ingestion** and moved some data to **Amorphic**.
+By now, you must have learned **a few basics** and moved some data to **Amorphic**.
 
 But Amorphic has **much more to offer**!
 
