@@ -1,91 +1,48 @@
 ---
-title: Create Datasets
+title: Create datasets for forecasting
 ---
 
 :::info
 - Follow the steps mentioned below.
 - Total time taken for this task:  **10 Minutes**.
-- Pre-requisites: Ingestion Task
+- Pre-requisites: None
 :::
 
-<br/><br/>
-Types of ETL on Amorphic:
+- Step 1 - Data for forcasting has already beem prepared and the two datatsets in csv file format can be downloaded here -  [Target](./media/Target.csv), [Related](./media/Related.csv)
 
-| Types of ETL      | Description | Target Audience |
-| :----: | :----: |  :----: |
-| 1. Using Spark job       | Write Pyspark code        |  Experienced Pyspark Developer       |
-| 2. Using Morph job       | Create a Drag and Drop Job       |  Any ETL developer / Business Analyst        |
+i) Target csv attributes: These are the mandatory attributes required for forecasting. It includes the following columns and we will be required to specify repsective formats for each attribute as we go through the steps later-
 
-For this workshop, we will use a pre-written Spark code. But, we will also explore the Morph job. 
-
-For both methods, we need to create three output **'Datasets'** to write the data from the job. Best part of Amorphic is - these datasets will automatically write data to Redshift tables without any coding.   So, let's create three **Datasets.**
-
-## Create Retail_sales_transformed Dataset
-
-- Click on 'DATASETS' --> 'Datasets' from left side menu. 
-- Click on '+' icon at the top right corner.
-- Enter following information 
-
-```
-Dataset Name: Retail_sales_transformed
-Description: Output dataset for sales transformed data. The target location is Redshift.
-Domain: 1Landing Zone(landingzone)
-Data Classifications: Raw
-Keywords: Retail
-Connection Type: API (default)
-File Type: csv
-Target Location: Redshift
-Update Method: Append
-My Data Files Have Headers: Yes
-Custom Delimiter: ,
-Enable Malware Detection: No
-Enable Data Profiling: No
-```
-![Create Dataset](./media/CreateDataset1.PNG)
-
-- Click on **'Register'** button at the bottom to move to next step.
-- Click on the following CSV file to download it to your computer.
-
-[Sample Sales CSV File](./media/sales_trimmed.csv)
-
-- Click on **'Click to upload'** to upload the file that is downloaded in above step.
-- Click on **'Extract Schema'** as shown below.
-
-![Create Dataset](./media/CreateDataset2.PNG)
-
-- You will get a message 'File uploaded successfully'.  Click OK.
-- A new screen will appear with the schema extracted as shown below. 
-
-![Create Dataset](./media/CreateDataset3.PNG)
-
-- Verify the columns and data types.
-- Change the 'Sort Key Type' to None.
-- Click on **'Publish Dataset'**. You will get 'Completed the registration process successfully' message. Click OK.
-
-Now, above steps to be repeated for creating two more datasets.  The only difference is 'Dataset Name', 'Description' and 'Sample CSV file' that are listed below. 
-
-## Create Retail_shrinkage_transformed Dataset
-
-```
-Dataset Name: Retail_shrinkage_transformed
-Description: Output dataset for shrinkage transformed data. The target location is Redshift.
-```
-[Sample Shrinkage CSV File](./media/shrinkage_trimmed.csv)
+|      | Fields      | Format |
+| :----: | :----: | :----: | 
+| 1.| Format       | float64        |  
+| 2.| timestamp       | datetime64[ns]       |  
+| 3.| item_id       | object      |  
 
 
-## Create Retail_stocks_transformed Dataset
+ii) Related attributes : These are additional attributes we are looking to include in the forecasting process. We will be required to specify repsective formats for each attribute as we go through the steps later -
 
-```
-Dataset Name: Retail_stocks_transformed
-Description: Output dataset for stocks transformed data. The target location is Redshift.
-```
-[Sample Stocks CSV File](./media/stocks_trimmed.csv)
+|Fields | Format |
+| :----: | :----: | 
+|Store_Name|               object|
+|Region        |              object|
+|food_or_non_food  |          object|
+|Division          |          object|
+|Main_Category_Name  |object|
+|COGS_in_NNBP     |     object|
+|Gross_Profit_pct    |       object|
+|timestamp            |   datetime64[ns]|
+|item_id             |          object|
 
+- Step 2 - Create Amorphic datasets for the “Target” & the “Related” csv files respectively. 
+The following screenshots have sample values and connection configuration for the ‘Target’ & the ‘Related’ datasets to be created in Amorphic.
+ 
+![Create Dataset](./media/target_sample_values_and_connection.png)
 
-:::tip Congratulations!!!
+![Create Dataset](./media/related_sample_values_and_connection.png)
 
-  You have successfully created three output datasets task. Now, proceed to **'Create Spark Job'** task. 
+After registering the dataset, we navigate to the "Files" tab as shown in the screen below. ‘Target.csv’ & ‘Related.csv’ files can be uploaded by clicking on this icon -
 
-:::
+ ![Create Dataset](./media/Upload.png) 
 
-
+![Create Dataset](./media/Upload_Target_CSV.png)
+![Create Dataset](./media/Upload_Related_CSV.png)

@@ -5,24 +5,18 @@
           "id": "getting-started"
         },
         {
-          "type": "category",
-          "label": "Pre Requisites",
-          "items": [
-            "create-amorphic"
-          ]
+          "type": "doc",
+          "id": "create-amorphic"
         },
         {
-          "type": "category",
-          "label": "Ingestion",
-          "items": [
-            "ingestion"
-          ]
+          "type": "doc",
+          "id": "ingestion"
         },
         {
           "type": "category",
           "label": "ETL",
           "items": [
-            "create-datasets",
+            "create-output-datasets",
             "create-spark-job",
             "create-morph-job",
             "query-data"
@@ -30,14 +24,22 @@
         },
         {
           "type": "category",
-          "label": "Forecasting",
+          "label": "Forecasting Sales",
           "items": [
-            "Forecasting_Sales"
+            "create-datasets",
+            "setup-forecasting-job",
+            "store-predictions-for-dashboarding"
           ]
         },
         {
-          "type": "doc",
-          "id": "dashboard"
+          "type": "category",
+          "label": "Dashboard",
+          "items": [
+            "create-view",
+            "create-quicksightDashboard",
+            "connecting-dashboard",
+            "using-dashboard"
+          ]  
         },
         {
           "type": "doc",

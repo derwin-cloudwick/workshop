@@ -173,24 +173,18 @@ module.exports = {
       "id": "use-case/retail/getting-started"
     },
     {
-      "type": "category",
-      "label": "Pre Requisites",
-      "items": [
-        "use-case/retail/create-amorphic"
-      ]
+      "type": "doc",
+      "id": "use-case/retail/create-amorphic"
     },
     {
-      "type": "category",
-      "label": "Ingestion",
-      "items": [
-        "use-case/retail/ingestion"
-      ]
+      "type": "doc",
+      "id": "use-case/retail/ingestion"
     },
     {
       "type": "category",
       "label": "ETL",
       "items": [
-        "use-case/retail/create-datasets",
+        "use-case/retail/create-output-datasets",
         "use-case/retail/create-spark-job",
         "use-case/retail/create-morph-job",
         "use-case/retail/query-data"
@@ -198,14 +192,22 @@ module.exports = {
     },
     {
       "type": "category",
-      "label": "Forecasting",
+      "label": "Forecasting Sales",
       "items": [
-        "use-case/retail/Forecasting_Sales"
+        "use-case/retail/create-datasets",
+        "use-case/retail/setup-forecasting-job",
+        "use-case/retail/store-predictions-for-dashboarding"
       ]
     },
     {
-      "type": "doc",
-      "id": "use-case/retail/dashboard"
+      "type": "category",
+      "label": "Dashboard",
+      "items": [
+        "use-case/retail/create-view",
+        "use-case/retail/create-quicksightDashboard",
+        "use-case/retail/connecting-dashboard",
+        "use-case/retail/using-dashboard"
+      ]
     },
     {
       "type": "doc",
