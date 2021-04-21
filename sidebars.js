@@ -5,12 +5,15 @@ module.exports = {
       "id": "index"
     },
     {
-      "type": "doc",
-      "id": "use-cases"
-    },
-    {
-      "type": "doc",
-      "id": "thank-you"
+      "type": "category",
+      "label": "Use cases",
+      "items": [
+        "use-cases",
+        {
+          "type": "ref",
+          "id": "use-case/retail-sales-forecast/index"
+        }
+      ]
     }
   ],
   "how-to": [
@@ -89,129 +92,51 @@ module.exports = {
       "id": "snippets/readparams/read-parameters-py"
     }
   ],
-  "finance": [
+  "retailSalesForecasting": [
     {
       "type": "doc",
-      "id": "use-case/finance/getting-started"
+      "id": "use-case/retail-sales-forecast/index"
     },
     {
-      "type": "category",
-      "label": "Pre Requisites",
-      "items": [
-        "use-case/finance/create-amorphic",
-        "use-case/finance/markdown-features"
-      ]
+      "type": "doc",
+      "id": "use-case/retail-sales-forecast/prereqs"
     },
     {
-      "type": "category",
-      "label": "Ingestion",
-      "items": [
-        "use-case/finance/ingestion"
-      ]
+      "type": "doc",
+      "id": "use-case/retail-sales-forecast/ingestion"
     },
     {
       "type": "category",
       "label": "ETL",
       "items": [
-        "use-case/finance/etl"
-      ]
-    },
-    {
-      "type": "category",
-      "label": "Schedules",
-      "items": [
-        "use-case/finance/schedule"
-      ]
-    },
-    {
-      "type": "doc",
-      "id": "use-case/finance/finish"
-    }
-  ],
-  "healthcare": [
-    {
-      "type": "doc",
-      "id": "use-case/healthcare/getting-started"
-    },
-    {
-      "type": "category",
-      "label": "Pre Requisites",
-      "items": [
-        "use-case/healthcare/create-amorphic",
-        "use-case/healthcare/markdown-features"
-      ]
-    },
-    {
-      "type": "category",
-      "label": "Ingestion",
-      "items": [
-        "use-case/healthcare/ingestion"
-      ]
-    },
-    {
-      "type": "category",
-      "label": "ETL",
-      "items": [
-        "use-case/healthcare/etl"
-      ]
-    },
-    {
-      "type": "category",
-      "label": "Schedules",
-      "items": [
-        "use-case/healthcare/schedule"
-      ]
-    },
-    {
-      "type": "doc",
-      "id": "use-case/healthcare/finish"
-    }
-  ],
-  "retail": [
-    {
-      "type": "doc",
-      "id": "use-case/retail/getting-started"
-    },
-    {
-      "type": "doc",
-      "id": "use-case/retail/prereqs"
-    },
-    {
-      "type": "doc",
-      "id": "use-case/retail/ingestion"
-    },
-    {
-      "type": "category",
-      "label": "ETL",
-      "items": [
-        "use-case/retail/create-output-datasets",
-        "use-case/retail/create-spark-job",
-        "use-case/retail/create-morph-job",
-        "use-case/retail/query-data"
+        "use-case/retail-sales-forecast/create-output-datasets",
+        "use-case/retail-sales-forecast/create-spark-job",
+        "use-case/retail-sales-forecast/create-morph-job",
+        "use-case/retail-sales-forecast/query-data"
       ]
     },
     {
       "type": "category",
       "label": "Forecasting Sales",
       "items": [
-        "use-case/retail/create-datasets",
-        "use-case/retail/setup-forecasting-job",
-        "use-case/retail/store-predictions-for-dashboarding"
+        "use-case/retail-sales-forecast/create-datasets",
+        "use-case/retail-sales-forecast/setup-forecasting-job",
+        "use-case/retail-sales-forecast/store-predictions-for-dashboarding"
       ]
     },
     {
       "type": "category",
       "label": "Dashboard",
       "items": [
-        "use-case/retail/create-view",
-        "use-case/retail/create-quicksightDashboard",
-        "use-case/retail/connecting-dashboard",
-        "use-case/retail/using-dashboard"
+        "use-case/retail-sales-forecast/create-view",
+        "use-case/retail-sales-forecast/create-quicksightDashboard",
+        "use-case/retail-sales-forecast/connecting-dashboard",
+        "use-case/retail-sales-forecast/using-dashboard"
       ]
     },
     {
       "type": "doc",
-      "id": "use-case/retail/finish"
+      "id": "use-case/retail-sales-forecast/finish"
     }
   ]
 }

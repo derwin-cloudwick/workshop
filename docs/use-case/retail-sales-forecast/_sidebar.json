@@ -1,8 +1,8 @@
 {
-    "retail": [
+    "retailSalesForecasting": [
         {
           "type": "doc",
-          "id": "getting-started"
+          "id": "index"
         },
         {
           "type": "doc",
@@ -39,7 +39,7 @@
             "create-quicksightDashboard",
             "connecting-dashboard",
             "using-dashboard"
-          ]  
+          ]
         },
         {
           "type": "doc",

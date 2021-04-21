@@ -5,12 +5,15 @@
         "id": "index"
       },
       {
-        "type": "doc",
-        "id": "use-cases"
-      },
-      {
-        "type": "doc",
-        "id": "thank-you"
+        "type": "category",
+        "label": "Use cases",
+        "items": [
+          "use-cases",
+          {
+            "type": "ref",
+            "id": "use-case/retail-sales-forecast/index"
+          }
+        ]
       }
   ]
 }

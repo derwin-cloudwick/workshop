@@ -128,6 +128,7 @@ module.exports = {
     ],
   ],
   plugins: [
-    'docusaurus-plugin-sass'
+    'docusaurus-plugin-sass',
+    '@docusaurus/plugin-ideal-image'
   ]
 };
