@@ -8,8 +8,7 @@
           "type": "category",
           "label": "Pre Requisites",
           "items": [
-            "create-amorphic",
-            "markdown-features"
+            "create-amorphic"
           ]
         },
         {
@@ -23,15 +22,22 @@
           "type": "category",
           "label": "ETL",
           "items": [
-            "etl"
+            "create-datasets",
+            "create-spark-job",
+            "create-morph-job",
+            "query-data"
           ]
         },
         {
           "type": "category",
-          "label": "Schedules",
+          "label": "Forecasting",
           "items": [
-            "schedule"
+            "Forecasting_Sales"
           ]
+        },
+        {
+          "type": "doc",
+          "id": "dashboard"
         },
         {
           "type": "doc",

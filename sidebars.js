@@ -176,8 +176,7 @@ module.exports = {
       "type": "category",
       "label": "Pre Requisites",
       "items": [
-        "use-case/retail/create-amorphic",
-        "use-case/retail/markdown-features"
+        "use-case/retail/create-amorphic"
       ]
     },
     {
@@ -191,15 +190,22 @@ module.exports = {
       "type": "category",
       "label": "ETL",
       "items": [
-        "use-case/retail/etl"
+        "use-case/retail/create-datasets",
+        "use-case/retail/create-spark-job",
+        "use-case/retail/create-morph-job",
+        "use-case/retail/query-data"
       ]
     },
     {
       "type": "category",
-      "label": "Schedules",
+      "label": "Forecasting",
       "items": [
-        "use-case/retail/schedule"
+        "use-case/retail/Forecasting_Sales"
       ]
+    },
+    {
+      "type": "doc",
+      "id": "use-case/retail/dashboard"
     },
     {
       "type": "doc",
