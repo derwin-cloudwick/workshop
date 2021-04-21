@@ -2,7 +2,7 @@
 module.exports = {
   title: 'Amorphic Workshop',
   tagline: 'This workshop enables you to create a fully operational solutions',
-  url: 'https://amorphicdata.github.io',
+  url: 'https://workshop.amorphicdata.io',
   baseUrl: '/',
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
