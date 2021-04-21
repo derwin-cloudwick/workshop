@@ -1,0 +1,49 @@
+{
+    "retailSalesForecasting": [
+        {
+          "type": "doc",
+          "id": "index"
+        },
+        {
+          "type": "doc",
+          "id": "prereqs"
+        },
+        {
+          "type": "doc",
+          "id": "ingestion"
+        },
+        {
+          "type": "category",
+          "label": "ETL",
+          "items": [
+            "create-output-datasets",
+            "create-spark-job",
+            "create-morph-job",
+            "query-data"
+          ]
+        },
+        {
+          "type": "category",
+          "label": "Forecasting Sales",
+          "items": [
+            "create-datasets",
+            "setup-forecasting-job",
+            "store-predictions-for-dashboarding"
+          ]
+        },
+        {
+          "type": "category",
+          "label": "Dashboard",
+          "items": [
+            "create-view",
+            "create-quicksightDashboard",
+            "connecting-dashboard",
+            "using-dashboard"
+          ]
+        },
+        {
+          "type": "doc",
+          "id": "finish"
+        }
+      ]
+}

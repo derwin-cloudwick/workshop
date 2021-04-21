@@ -1,0 +1,87 @@
+---
+title: Setup forecasting job
+---
+
+:::info
+- Follow the steps mentioned below.
+- Total time taken for this task:  ** 2 hours **.
+- Pre-requisites: Datasets creation for forecasting
+:::
+
+- Step 1 - Navigate to the forecasting link -
+
+![Create Dataset](./media/Navigate_To_Forecasting.png)
+
+Create a forecast job by clicking on the link "Create Forecast Job" - 
+
+![Create Dataset](./media/Create_Forecast_1.png)
+
+Enter details to setup forecasting job and submit. This sets a job for running AWS Forecasting service
+
+![Create Dataset](./media/Create_Forecast_2.png)
+
+
+- Step 2 - Map datasets for the forecast job by navigating to the 'Datasets' tab -
+
+![Create Dataset](./media/Navigate_To_Datasets.png)
+
+i)  Map the “TargetSalesData” dataset and submit the form. Make sure the attribute formats are correctly specified as shown in the screen below  - 
+
+![Create Dataset](./media/Map_Target_Dataset.png)
+
+ii) Map the “Sales_Related_Data” dataset. All variables listed in the "Related attributes" section above must be mapped as "String" format with the exception of "timestamp". Submit the form once done - 
+
+![Create Dataset](./media/Upload_Related_Dataset.png)
+
+The above actions will take approx 20-30 mins to complete. You will need to wait for this step to complete before you can proceed to the next steps.
+
+- Step 3 - Configure a ‘Predictor’ for the forecast job
+
+Predictor configuration is where the algorithm to be used and the parameters that are required by the algorithm are configured. First navigate to the "Predictors" tab -
+
+![Create Dataset](./media/Navigate_To_Predictor.png)
+
+Click on "+" icon on the screen to create a predictor. Enter the sample values as shown in the screen below and "submit" the form -
+
+![Create Dataset](./media/Predictor_Configuration.png)
+
+This step will take 20-30 mins to complete.
+
+
+- Step 4 - Create a version for the Forecast predictor. It uses the configuration and its associated parameters to create the version which can then be used to create an inference.
+
+We need to navigate to the "Predictors" tab to create a version.
+
+![Create Dataset](./media/predictor_created.png)
+
+Click on the ‘+’ icon to create a new version for the predictor. Add tags for the version. Tags can be associated with a version for distinguishing it from other versions.
+
+![Create Dataset](./media/create_version.png)
+
+This step will take 20-30 mins to complete.
+
+
+- Step 5 - Create an inference and submit the job.
+
+Navigate to the "Inferences" tab -
+
+![Create Dataset](./media/Inference_Tab.png)
+
+Click on "+" icon to create an Inference.  
+
+![Create Dataset](./media/Create_Inference.png)
+
+This step will take approx. 30 mins to complete. Inference generates a csv file based on the input. The file generated can be downloaded or can be saved directly to an Amorphic Dataset. 
+
+
+- Step 6 - Download predictions once the job has completed. The link to download the files can seen in the screen below -
+
+![Create Dataset](./media/Download_Predictions.png)
+
+We have three predictions in the output representing varying confidance levels - P10, P50 & P90. A sample output is as follows -
+
+![Create Dataset](./media/prediction_results.png)
+
+The csv file with the predictions can be downloaded here - 
+[Predictions ](./media/Mapped_Prediction.csv)
+
