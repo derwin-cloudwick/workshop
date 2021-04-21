@@ -174,7 +174,7 @@ module.exports = {
     },
     {
       "type": "doc",
-      "id": "use-case/retail/create-amorphic"
+      "id": "use-case/retail/prereqs"
     },
     {
       "type": "doc",
