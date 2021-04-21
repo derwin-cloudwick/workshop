@@ -113,6 +113,10 @@ module.exports = {
     colorMode: {
       disableSwitch: false,
     },
+    algolia: {
+      apiKey: '1790729c31ae660cf33f32c5639b0376',
+      indexName: 'workshop'
+    },
   },
   presets: [
     [
