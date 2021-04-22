@@ -27,19 +27,21 @@ For both methods, we need to create three output **'Datasets'** to write the dat
 - Enter following information 
 
 ```
-Dataset Name: Retail_sales_transformed
-Description: Output dataset for sales transformed data. The target location is Redshift.
-Domain: 1Landing Zone(landingzone)
-Data Classifications: Raw
-Keywords: Retail
-Connection Type: API (default)
-File Type: csv
-Target Location: Redshift
-Update Method: Append
-My Data Files Have Headers: Yes
-Custom Delimiter: ,
-Enable Malware Detection: No
-Enable Data Profiling: No
+{
+  "Dataset Name": "Retail_sales_transformed"
+  "Description": "Output dataset for sales transformed data. The target location is Redshift."
+  "Domain": "1Landing Zone(landingzone)"
+  "Data Classifications": "Raw"
+  "Keywords": "Retail"
+  "Connection Type": "API (default)"
+  "File Type": "csv"
+  "Target Location": "Redshift"
+  "Update Method": "Append"
+  "My Data Files Have Headers": "Yes"
+  "Custom Delimiter": ","
+  "Enable Malware Detection": "No"
+  "Enable Data Profiling": "No"
+}
 ```
 ![Create Dataset](./media/CreateDataset1.PNG)
 
@@ -67,8 +69,10 @@ Now, above steps to be repeated for creating two more datasets.  The only differ
 ## Create Retail_shrinkage_transformed Dataset
 
 ```
-Dataset Name: Retail_shrinkage_transformed
-Description: Output dataset for shrinkage transformed data. The target location is Redshift.
+{
+  "Dataset Name": "Retail_shrinkage_transformed"
+  "Description": "Output dataset for shrinkage transformed data. The target location is Redshift."
+}
 ```
 [Sample Shrinkage CSV File](./media/shrinkage_trimmed.csv)
 
@@ -76,8 +80,10 @@ Description: Output dataset for shrinkage transformed data. The target location 
 ## Create Retail_stocks_transformed Dataset
 
 ```
-Dataset Name: Retail_stocks_transformed
-Description: Output dataset for stocks transformed data. The target location is Redshift.
+{
+  "Dataset Name": "Retail_stocks_transformed"
+  "Description": "Output dataset for stocks transformed data. The target location is Redshift."
+}
 ```
 [Sample Stocks CSV File](./media/stocks_trimmed.csv)
 
